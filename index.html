@@ -82,89 +82,113 @@
       </ol>
     </section>
     <section id="booking">
-      <h2>Забронировать</h2>
+      <h2>Забронировать зал просто</h2>
       <form name="my-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
         <fieldset>
-          <label for="vibes">80's vibes</label>
+          <legend>Выбери зал</legend>
+
+          
           <input type="radio" name="hall" value="80's vibes" id="vibes" />
-
-          <label for="starwars">Star wars</label>
+          <label>80's vibes</label>
+          
+         
           <input type="radio" name="hall" value="star wars" id="starwars" />
-
-          <label for="wildwest">Wild west</label>
+          <label>Star wars</label>
+          
+          
           <input type="radio" name="hall" value="wild west" id="wildwest" />
-
-          <label for="neon">Neon style</label>
+          <label>Wild west</label>
+          
+          
           <input type="radio" name="hall" value="neon style" id="neon" />
+          <label>Neon style</label>
+          
         </fieldset>
         <fieldset>
           <legend>Собери набор развлечений</legend>
           <fieldset>
             <legend>Приставка:</legend>
-            <label for="playstation">Playstation</label>
+
+            <label>
             <input type="radio" name="game" value="Playstation" id="playstation" />
-
-            <label for="sega">Sega Mega Drive</label>
+             Playstation</label>
+            
+             <label>
             <input type="radio" name="game" value="Sega Mega Drive" id="sega" />
+            Sega Mega Drive</label>
 
-            <label for="xbox">X-Box One S</label>
+            <label>
             <input type="radio" name="game" value="X-Box One S" id="xbox" />
+            X-Box One S</label>
 
-            <label for="dendy">Dendy</label>
+            <label>
             <input type="radio" name="game" value="Dendy" id="dendy" />
+            Dendy</label>
+            
           </fieldset>
           <fieldset>
             <legend>Настольные игры:</legend>
 
-            <label for="jenga">Jenga</label>
+            <label>
             <input type="checkbox" name="boardGames" value="Jenga" id="jenga" />
-
-            <label for="monopoly">Monopoly</label>
+           Jenga</label>
+            
+           <label>
             <input type="checkbox" name="boardGames" value="Monopoly" id="monopoly" />
-
-            <label for="manchkin">Манчкин</label>
+            Monopoly</label>
+            
+            <label>
             <input type="checkbox" name="boardGames" value="Manchkin" id="manchkin" />
-
-            <label for="alias">Alias</label>
+            Манчкин</label>
+           
+            <label>
             <input type="checkbox" name="boardGames" value="Alias" id="alias" />
+            Alias</label>
+            
           </fieldset>
           <fieldset>
             <legend>Дополнительно:</legend>
 
-            <label for="karaoke">Караоке</label>
+            <label>
             <input type="checkbox" name="additionally" value="Karaoke" id="karaoke" />
-
-            <label for="vr">VR</label>
+           Караоке</label>
+            
+           <label>
             <input type="checkbox" name="additionally" value="Vr" id="vr" />
+           VR</label>
+            
           </fieldset>
           <fieldset>
-            <legend>Выберите дату и время</legend>
+          
+            <legend>Выбери дату и время</legend>
+          <div>
+            Дата*<input type="date" name="date" id="date" required />
+            Время*<input type="time" name="type" required id="time" />
+            
+          </div>
+        </select>
+        <input type="number" name="people" id="people" required />
+        
+      </select>
 
-            <label for="date">Дата* </label>
-            <input type="date" name="date" id="date" required />
-
-            <label for="time">Время* </label>
-            <input type="time" name="type" required id="time" />
-
-            <label for="people">Количество человек* </label>
-            <input type="number" name="people" id="people" required />
-
-            <label for="name">Имя* </label>
+<div>
+            <label for="name">Имя</label>
             <input type="text" name="name" id="name" required />
 
-            <label for="surname">Фамилия* </label>
+            <label for="surname">Фамилия</label>
             <input type="text" name="surname" id="surname" required />
-
-            <label for="telephone">Номер телефона* </label>
+          </div>
+          <div>
+            <label for="telephone">Телефон</label>
             <input type="tel" name="telephone" id="telephone" />
 
-            <label for="agreement">Я старше 18 лет</label>
-            <input type="checkbox" name="agreement" value="true" />
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" />
+          </div>
           </fieldset>
           <button type="submit">Забронировать</button>
 
-          <label for="dataProcessing">Согласен на обработку данных</label>
-          <input type="checkbox" name="dataProcessing" value="true" id="dataProcessing" required />
+
         </fieldset>
       </form>
     </section>
@@ -175,7 +199,8 @@
         <i>концептуально новое пространство виртуальной реальности</i> в центральной части города.
       </p>
       <p>
-        Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.
+        Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми
+        разработками со всего мира.
       </p>
       <blockquote>
         <p><b>GAME OVER</b> - это место незабываемых впечатлений</p>
@@ -183,6 +208,33 @@
           <cite>Аркадий Абакин, создатель игровой территории GAME OVER</cite>
         </p>
       </blockquote>
+    </section>
+    <section id="reviews">
+      <h2>Отзывы посетителей</h2>
+      <article>
+        
+          <img src="false" alt="фотографии нет в уроке">
+          <h3>Макс Самойлов</h3>
+        <p>Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще
+          я не был в таком полном игровом погружении! Сервис на высоте!</p>
+        
+      </article>
+      <article>
+        
+          <img src="false" alt="фотографии нет в уроке">
+          <h3>Оксана Григорьевна</h3>
+        <p>Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив!У нас в городе больше
+          нет подобных заведений</p>
+        
+      </article>
+      <article>
+        
+          <img src="false" alt="фотографии нет в уроке">
+          <h3>Никита Ященко</h3>
+        <p>Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в
+          атмосферу космоса</p>
+        
+      </article>
     </section>
   </main>
   <footer id="contacts">
