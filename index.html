@@ -87,21 +87,21 @@
         <fieldset>
           <legend>Выбери зал</legend>
 
-          <label>
+          
           <input type="radio" name="hall" value="80's vibes" id="vibes" />
-         80's vibes</label>
+          <label>80's vibes</label>
           
-         <label>
+         
           <input type="radio" name="hall" value="star wars" id="starwars" />
-          Star wars</label>
+          <label>Star wars</label>
           
-          <label>
+          
           <input type="radio" name="hall" value="wild west" id="wildwest" />
-          Wild west</label>
+          <label>Wild west</label>
           
-          <label>
+          
           <input type="radio" name="hall" value="neon style" id="neon" />
-         Neon style</label>
+          <label>Neon style</label>
           
         </fieldset>
         <fieldset>
@@ -159,22 +159,18 @@
             
           </fieldset>
           <fieldset>
-            <div>
+          
             <legend>Выбери дату и время</legend>
           <div>
-            <select name="date">
-              <option>Дата</option>
+            <input type="date" name="date" id="date" required />
+            <input type="time" name="type" required id="time" />
             
-          </select>
-          <select name="time">
-            <option>Время</option>
           </div>
         </select>
-        <select name="people">
-          <option>Сколько человек</option>
+        <input type="number" name="people" id="people" required />
         
       </select>
-</div>
+
 <div>
             <label for="name">Имя</label>
             <input type="text" name="name" id="name" required />
