@@ -1,207 +1,308 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Проект GO</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/favicon/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="./pages/index.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Проект GO</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="./images/favicon/site.webmanifest" />
-  <meta name="msapplication-TileColor" content="#da532c" />
-  <meta name="theme-color" content="#ffffff" />
-  <link rel="stylesheet" href="./style.css">
-</head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <img src="./images/logo.svg" alt="логотип" />
+        <p>Меню</p>
+        <nav>
+          <ul>
+            <li><a href="#halls">Залы</a></li>
+            <li><a href="#aboutUs">О нас</a></li>
+            <li><a href="#booking">Бронь</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section>
+          <h1>У нас есть все для классного отдыха с друзьями!</h1>
+          <ul>
+            <li>
+              <figure>
+                <img src="./images/vr.png" alt="Виртуальная реальность" />
+                <figcaption>VR очки</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="./images/audio.png" alt="Аудио-система" />
+                <figcaption>Аудио-система 5.1 с отличным звуком</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="./images/micro.png" alt="Караоке" />
+                <figcaption>Караоке (4 микрофона)</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="./images/game.png" alt="Мини игры" />
+                <figcaption>Настольные мини игры</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="./images/netflix.png" alt="Киносервисы" />
+                <figcaption>
+                  Кино сервисы Netflix,IVI,MegoGo,Кинопоиск,Okko
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="./images/sony.png" alt="Игровая приставка" />
+                <figcaption>Playstation 5</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+        <section id="halls">
+          <h2>Наши залы</h2>
+          <ol>
+            <li><a href="./vibes.html">80's vibes</a></li>
+            <li><a href="./starwars.html">Star wars</a></li>
+            <li><a href="./wildwest.html">Wild west</a></li>
+            <li><a href="./neon.html">Neon style</a></li>
+          </ol>
+        </section>
+        <section id="booking">
+          <h2>Забронировать</h2>
+          <form
+            name="my-form"
+            action="https://jsonplaceholder.typicode.com/posts"
+            method="POST"
+          >
+            <fieldset>
+              <label for="vibes">80's vibes</label>
+              <input type="radio" name="hall" value="80's vibes" id="vibes" />
 
-<body>
-  <div class="wrapper">
-  <header>
-    <img src="./images/logo.svg" alt="логотип" />
-    <p>Меню</p>
-    <nav>
-      <ul>
-        <li><a href="#halls">Залы</a></li>
-        <li><a href="#aboutUs">О нас</a></li>
-        <li><a href="#booking">Бронь</a></li>
-        <li><a href="#reviews">Отзывы</a></li>
-        <li><a href="#contacts">Контакты</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section>
-      <h1>У нас есть все для классного отдыха с друзьями!</h1>
-      <ul>
-        <li>
-          <figure>
-            <img src="./images/vr.png" alt="Виртуальная реальность" />
-            <figcaption>VR очки</figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="./images/audio.png" alt="Аудио-система" />
-            <figcaption>Аудио-система 5.1 с отличным звуком</figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="./images/micro.png" alt="Караоке" />
-            <figcaption>Караоке (4 микрофона)</figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="./images/game.png" alt="Мини игры" />
-            <figcaption>Настольные мини игры</figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="./images/netflix.png" alt="Киносервисы" />
-            <figcaption>
-              Кино сервисы Netflix,IVI,MegoGo,Кинопоиск,Okko
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="./images/sony.png" alt="Игровая приставка" />
-            <figcaption>Playstation 5</figcaption>
-          </figure>
-        </li>
-      </ul>
-    </section>
-    <section id="halls">
-      <h2>Наши залы</h2>
-      <ol>
-        <li><a href="./vibes.html">80's vibes</a></li>
-        <li><a href="./starwars.html">Star wars</a></li>
-        <li><a href="./wildwest.html">Wild west</a></li>
-        <li><a href="./neon.html">Neon style</a></li>
-      </ol>
-    </section>
-    <section id="booking">
-      <h2>Забронировать</h2>
-      <form name="my-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-        <fieldset>
-          <label for="vibes">80's vibes</label>
-          <input type="radio" name="hall" value="80's vibes" id="vibes" />
+              <label for="starwars">Star wars</label>
+              <input type="radio" name="hall" value="star wars" id="starwars" />
 
-          <label for="starwars">Star wars</label>
-          <input type="radio" name="hall" value="star wars" id="starwars" />
+              <label for="wildwest">Wild west</label>
+              <input type="radio" name="hall" value="wild west" id="wildwest" />
 
-          <label for="wildwest">Wild west</label>
-          <input type="radio" name="hall" value="wild west" id="wildwest" />
+              <label for="neon">Neon style</label>
+              <input type="radio" name="hall" value="neon style" id="neon" />
+            </fieldset>
+            <fieldset>
+              <legend>Собери набор развлечений</legend>
+              <fieldset>
+                <legend>Приставка:</legend>
+                <label for="playstation">Playstation</label>
+                <input
+                  type="radio"
+                  name="game"
+                  value="Playstation"
+                  id="playstation"
+                />
 
-          <label for="neon">Neon style</label>
-          <input type="radio" name="hall" value="neon style" id="neon" />
-        </fieldset>
-        <fieldset>
-          <legend>Собери набор развлечений</legend>
-          <fieldset>
-            <legend>Приставка:</legend>
-            <label for="playstation">Playstation</label>
-            <input type="radio" name="game" value="Playstation" id="playstation" />
+                <label for="sega">Sega Mega Drive</label>
+                <input
+                  type="radio"
+                  name="game"
+                  value="Sega Mega Drive"
+                  id="sega"
+                />
 
-            <label for="sega">Sega Mega Drive</label>
-            <input type="radio" name="game" value="Sega Mega Drive" id="sega" />
+                <label for="xbox">X-Box One S</label>
+                <input type="radio" name="game" value="X-Box One S" id="xbox" />
 
-            <label for="xbox">X-Box One S</label>
-            <input type="radio" name="game" value="X-Box One S" id="xbox" />
+                <label for="dendy">Dendy</label>
+                <input type="radio" name="game" value="Dendy" id="dendy" />
+              </fieldset>
+              <fieldset>
+                <legend>Настольные игры:</legend>
 
-            <label for="dendy">Dendy</label>
-            <input type="radio" name="game" value="Dendy" id="dendy" />
-          </fieldset>
-          <fieldset>
-            <legend>Настольные игры:</legend>
+                <label for="jenga">Jenga</label>
+                <input
+                  type="checkbox"
+                  name="boardGames"
+                  value="Jenga"
+                  id="jenga"
+                />
 
-            <label for="jenga">Jenga</label>
-            <input type="checkbox" name="boardGames" value="Jenga" id="jenga" />
+                <label for="monopoly">Monopoly</label>
+                <input
+                  type="checkbox"
+                  name="boardGames"
+                  value="Monopoly"
+                  id="monopoly"
+                />
 
-            <label for="monopoly">Monopoly</label>
-            <input type="checkbox" name="boardGames" value="Monopoly" id="monopoly" />
+                <label for="manchkin">Манчкин</label>
+                <input
+                  type="checkbox"
+                  name="boardGames"
+                  value="Manchkin"
+                  id="manchkin"
+                />
 
-            <label for="manchkin">Манчкин</label>
-            <input type="checkbox" name="boardGames" value="Manchkin" id="manchkin" />
+                <label for="alias">Alias</label>
+                <input
+                  type="checkbox"
+                  name="boardGames"
+                  value="Alias"
+                  id="alias"
+                />
+              </fieldset>
+              <fieldset>
+                <legend>Дополнительно:</legend>
 
-            <label for="alias">Alias</label>
-            <input type="checkbox" name="boardGames" value="Alias" id="alias" />
-          </fieldset>
-          <fieldset>
-            <legend>Дополнительно:</legend>
+                <label for="karaoke">Караоке</label>
+                <input
+                  type="checkbox"
+                  name="additionally"
+                  value="Karaoke"
+                  id="karaoke"
+                />
 
-            <label for="karaoke">Караоке</label>
-            <input type="checkbox" name="additionally" value="Karaoke" id="karaoke" />
+                <label for="vr">VR</label>
+                <input type="checkbox" name="additionally" value="Vr" id="vr" />
+              </fieldset>
+              <fieldset>
+                <legend>Выберите дату и время</legend>
 
-            <label for="vr">VR</label>
-            <input type="checkbox" name="additionally" value="Vr" id="vr" />
-          </fieldset>
-          <fieldset>
-            <legend>Выберите дату и время</legend>
+                <label for="date">Дата* </label>
+                <input type="date" name="date" id="date" required />
 
-            <label for="date">Дата* </label>
-            <input type="date" name="date" id="date" required />
+                <label for="time">Время* </label>
+                <input type="time" name="type" required id="time" />
 
-            <label for="time">Время* </label>
-            <input type="time" name="type" required id="time" />
+                <label for="people">Количество человек* </label>
+                <input type="number" name="people" id="people" required />
 
-            <label for="people">Количество человек* </label>
-            <input type="number" name="people" id="people" required />
+                <label for="name">Имя* </label>
+                <input type="text" name="name" id="name" required />
 
-            <label for="name">Имя* </label>
-            <input type="text" name="name" id="name" required />
+                <label for="surname">Фамилия* </label>
+                <input type="text" name="surname" id="surname" required />
 
-            <label for="surname">Фамилия* </label>
-            <input type="text" name="surname" id="surname" required />
+                <label for="telephone">Номер телефона* </label>
+                <input type="tel" name="telephone" id="telephone" />
 
-            <label for="telephone">Номер телефона* </label>
-            <input type="tel" name="telephone" id="telephone" />
+                <label for="agreement">Я старше 18 лет</label>
+                <input type="checkbox" name="agreement" value="true" />
+              </fieldset>
+              <button type="submit">Забронировать</button>
 
-            <label for="agreement">Я старше 18 лет</label>
-            <input type="checkbox" name="agreement" value="true" />
-          </fieldset>
-          <button type="submit">Забронировать</button>
-
-          <label for="dataProcessing">Согласен на обработку данных</label>
-          <input type="checkbox" name="dataProcessing" value="true" id="dataProcessing" required />
-        </fieldset>
-      </form>
-    </section>
-    <section id="aboutUs">
-      <h2>О нас</h2>
-      <p>
-        Для наших гостей мы создали
-        <i>концептуально новое пространство виртуальной реальности</i> в центральной части города.
-      </p>
-      <p>
-        Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.
-      </p>
-      <blockquote>
-        <p><b>GAME OVER</b> - это место незабываемых впечатлений</p>
-        <p>
-          <cite>Аркадий Абакин, создатель игровой территории GAME OVER</cite>
-        </p>
-      </blockquote>
-    </section>
-  </main>
-  <footer id="contacts">
-    <h2>Контакты</h2>
-    <address>
-      <p>г.Москва ул. Аквамарина, 16</p>
-      <p><a href="tel:89509302893">8(950)930-28-93</a></p>
-      <p><a href="mailto:gameover@gmail.com">GameOver@gmail.com</a></p>
-    </address>
-    <nav>
-      <ul>
-        <li><a href="#" target="_blank">Vkontakte</a></li>
-        <li><a href="#" target="_blank">Telegram</a></li>
-      </ul>
-    </nav>
-  </footer>
-  </div>
-</body>
-
+              <label for="dataProcessing">Согласен на обработку данных</label>
+              <input
+                type="checkbox"
+                name="dataProcessing"
+                value="true"
+                id="dataProcessing"
+                required
+              />
+            </fieldset>
+          </form>
+        </section>
+        <section id="aboutUs">
+          <h2>О нас</h2>
+          <p>
+            Для наших гостей мы создали
+            <i>концептуально новое пространство виртуальной реальности</i> в
+            центральной части города.
+          </p>
+          <p>
+            Каждый день мы стараемся создавать для вас самую лучшую игровую
+            атмосферу и радовать Вас топовыми игровыми разработками со всего
+            мира.
+          </p>
+          <div class="blockquote">
+          <blockquote>
+            <p><b>GAME OVER</b> - это место незабываемых впечатлений</p>
+            <p>
+              <cite
+                >Аркадий Абакин, создатель игровой территории GAME OVER</cite
+              >
+            </p>
+          </blockquote>
+        </div>
+        </section>
+        <section id="reviews">
+          <h2>Отзывы посетителей</h2>
+          <article>
+            
+              <img src="false" alt="фотографии нет в уроке">
+              <h3>Макс Самойлов</h3>
+            <p>Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще
+              я не был в таком полном игровом погружении! Сервис на высоте!</p>
+            
+          </article>
+          <article>
+            
+              <img src="false" alt="фотографии нет в уроке">
+              <h3>Оксана Григорьевна</h3>
+            <p>Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив!У нас в городе больше
+              нет подобных заведений</p>
+            
+          </article>
+          <article>
+            
+              <img src="false" alt="фотографии нет в уроке">
+              <h3>Никита Ященко</h3>
+            <p>Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в
+              атмосферу космоса</p>
+            
+          </article>
+        </section>
+        <section>
+          <h2>Частые вопросы</h2>
+<div class="faq">
+  <p class="faq__element">Можно ли забронировать комнату онлайн?</p>
+  <p class="faq__element">Могут ли мне вернуть деньги за бронь?</p>
+  <p class="faq__element">Какая комната самая популярная?</p>
+  <p class="faq__element">Как получить VIP карту?</p>
+  <p class="faq__element">Какая комната самая популярная?</p>
+</div>
+        </section>
+      </main>
+      <footer id="contacts">
+        <h2>Контакты</h2>
+        <address>
+          <p>г.Москва ул. Аквамарина, 16</p>
+          <p><a href="tel:89509302893">8(950)930-28-93</a></p>
+          <p><a href="mailto:gameover@gmail.com">GameOver@gmail.com</a></p>
+        </address>
+        <nav>
+          <ul>
+            <li><a href="#" target="_blank">Vkontakte</a></li>
+            <li><a href="#" target="_blank">Telegram</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </body>
 </html>

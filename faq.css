@@ -1,0 +1,13 @@
+.faq__element {
+  background-color: #fff;
+  color: #1c1a1a;
+  font-weight: 700;
+  font-size: 24px;
+  padding: 30px 70px;
+  margin-bottom: 20px;
+}
+
+.faq__element:nth-child(2n) {
+  background-color: #440f51;
+  color: #fff;
+}
