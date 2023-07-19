@@ -1,13 +1,25 @@
-.faq__element {
-  background-color: #fff;
-  color: #1c1a1a;
+.faq__list {
   font-weight: 700;
   font-size: 24px;
   padding: 30px 70px;
   margin-bottom: 20px;
+  list-style-type:none;
+}
+.faq__list:last-child {
+  margin:0;
 }
 
-.faq__element:nth-child(2n) {
-  background-color: #440f51;
+.faq__list:nth-child(odd) {
+  background-color: #fff;
+  color: #1c1a1a;
+}
+
+.faq__list:nth-child(even) {
+  background-color: #440F51;
   color: #fff;
+}
+
+.faq__element {
+  margin: 0;
+  padding: 0;
 }
