@@ -1,25 +1,26 @@
-.faq__list {
+.faq__list-item {
   font-weight: 700;
   font-size: 24px;
   padding: 30px 70px;
   margin-bottom: 20px;
-  list-style-type:none;
+
 }
-.faq__list:last-child {
+.faq__list-item:last-child {
   margin:0;
 }
 
-.faq__list:nth-child(odd) {
+.faq__list-item:nth-child(odd) {
   background-color: #fff;
   color: #1c1a1a;
 }
 
-.faq__list:nth-child(even) {
+.faq__list-item:nth-child(even) {
   background-color: #440F51;
   color: #fff;
 }
 
-.faq__element {
+.faq__list {
   margin: 0;
   padding: 0;
+  list-style-type:none;
 }
